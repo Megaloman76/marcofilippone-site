@@ -1,118 +1,99 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white">
+    <main className="min-h-screen bg-black text-white">
 
       {/* HERO */}
-      <section className="h-screen flex flex-col justify-center px-6 md:px-20">
+      <section className="min-h-screen flex items-center px-6 md:px-24">
         <div className="max-w-5xl">
-          <p className="text-sm text-zinc-400 mb-4">
-            Cybersecurity Strategy & Engineering
+          
+          <p className="text-sm text-zinc-500 mb-4 tracking-wide">
+            CYBERSECURITY STRATEGY & ENGINEERING
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+          <h1 className="text-5xl md:text-7xl font-semibold mb-6 leading-tight">
             Marco Filippone
           </h1>
 
-          <h2 className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-2xl">
-            CISO Advisor — NIS2 & ISO 27001  
-            Governance, Security Architecture, Risk Management
-          </h2>
+          <p className="text-xl md:text-2xl text-zinc-300 mb-10 max-w-3xl leading-relaxed">
+            CISO Advisor — NIS2 & ISO 27001.  
+            Trasformo la sicurezza da costo a leva strategica.
+          </p>
 
           <div className="flex gap-4">
-            <a
-              href="#contatti"
-              className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-zinc-200 transition"
-            >
+            <a className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">
               Contattami
             </a>
 
-            <a
-              href="#servizi"
-              className="border border-zinc-600 px-6 py-3 rounded-md hover:border-white transition"
-            >
-              Servizi
+            <a className="border border-zinc-700 px-6 py-3 rounded-lg hover:border-white transition">
+              Scopri di più
             </a>
           </div>
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="px-6 md:px-20 py-20 border-t border-zinc-800">
-        <div className="max-w-4xl">
-          <h3 className="text-2xl font-semibold mb-6">
-            Approccio strategico alla sicurezza
-          </h3>
+      {/* DIVIDER */}
+      <div className="h-px bg-zinc-800 mx-6 md:mx-24" />
 
-          <p className="text-zinc-400 leading-relaxed">
-            Supporto aziende e organizzazioni nella strutturazione della sicurezza
-            informatica in modo concreto, misurabile e sostenibile.  
-            Lavoro su governance, architetture e processi, con un focus diretto
-            su conformità normativa e riduzione del rischio operativo.
+      {/* ABOUT */}
+      <section className="px-6 md:px-24 py-20">
+        <div className="max-w-3xl">
+          <h2 className="text-3xl font-semibold mb-6">
+            Approccio concreto
+          </h2>
+
+          <p className="text-zinc-400 leading-relaxed text-lg">
+            Supporto aziende nella strutturazione della sicurezza informatica con un approccio pragmatico.
+            Governance, architettura e conformità vengono integrate nei processi reali, non documentate solo sulla carta.
           </p>
         </div>
       </section>
 
+      <div className="h-px bg-zinc-800 mx-6 md:mx-24" />
+
       {/* SERVIZI */}
-      <section id="servizi" className="px-6 md:px-20 py-20 border-t border-zinc-800">
-        <h3 className="text-2xl font-semibold mb-10">Servizi</h3>
+      <section className="px-6 md:px-24 py-20">
+        <h2 className="text-3xl font-semibold mb-12">Servizi</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
 
-          <div className="p-6 border border-zinc-800 rounded-lg hover:border-white transition">
-            <h4 className="text-lg font-medium mb-3">CISO Advisory</h4>
-            <p className="text-zinc-400 text-sm">
-              Supporto strategico alla funzione sicurezza: governance, policy,
-              gestione rischio e allineamento business.
+          <div className="p-6 border border-zinc-800 rounded-xl hover:border-white transition">
+            <h3 className="text-xl font-medium mb-3">CISO Advisory</h3>
+            <p className="text-zinc-400">
+              Governance, policy e gestione del rischio allineate al business.
             </p>
           </div>
 
-          <div className="p-6 border border-zinc-800 rounded-lg hover:border-white transition">
-            <h4 className="text-lg font-medium mb-3">NIS2 Compliance</h4>
-            <p className="text-zinc-400 text-sm">
-              Analisi perimetro, gap assessment e definizione roadmap
-              di adeguamento proporzionata e difendibile.
+          <div className="p-6 border border-zinc-800 rounded-xl hover:border-white transition">
+            <h3 className="text-xl font-medium mb-3">NIS2</h3>
+            <p className="text-zinc-400">
+              Adeguamento proporzionato, difendibile e sostenibile.
             </p>
           </div>
 
-          <div className="p-6 border border-zinc-800 rounded-lg hover:border-white transition">
-            <h4 className="text-lg font-medium mb-3">ISO 27001</h4>
-            <p className="text-zinc-400 text-sm">
-              Implementazione e strutturazione del sistema di gestione
-              della sicurezza delle informazioni.
+          <div className="p-6 border border-zinc-800 rounded-xl hover:border-white transition">
+            <h3 className="text-xl font-medium mb-3">ISO 27001</h3>
+            <p className="text-zinc-400">
+              Implementazione e gestione del sistema di sicurezza.
             </p>
           </div>
 
         </div>
       </section>
 
-      {/* CREDIBILITÀ */}
-      <section className="px-6 md:px-20 py-20 border-t border-zinc-800">
-        <div className="max-w-4xl">
-          <h3 className="text-2xl font-semibold mb-6">
-            Esperienza operativa reale
-          </h3>
+      <div className="h-px bg-zinc-800 mx-6 md:mx-24" />
 
-          <p className="text-zinc-400 leading-relaxed">
-            Esperienza diretta nella gestione di infrastrutture complesse,
-            ambienti multi-sede e contesti regolati.  
-            Approccio orientato all’efficacia operativa, non alla teoria.
-          </p>
-        </div>
-      </section>
+      {/* CTA */}
+      <section className="px-6 md:px-24 py-20 text-center">
+        <h2 className="text-3xl font-semibold mb-6">
+          Vuoi strutturare la sicurezza in modo serio?
+        </h2>
 
-      {/* CONTATTI */}
-      <section id="contatti" className="px-6 md:px-20 py-20 border-t border-zinc-800">
-        <h3 className="text-2xl font-semibold mb-6">Contatti</h3>
-
-        <p className="text-zinc-400 mb-6">
-          Per collaborazioni o consulenze, puoi contattarmi direttamente.
+        <p className="text-zinc-400 mb-8">
+          Contattami per una prima valutazione.
         </p>
 
-        <a
-          href="mailto:tuamail@example.com"
-          className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-zinc-200 transition"
-        >
-          Scrivimi
+        <a className="bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-zinc-200 transition">
+          Contattami
         </a>
       </section>
 
