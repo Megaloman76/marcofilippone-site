@@ -6,26 +6,18 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
 
-      {/* BACKGROUND IMAGE */}
       <img
         src="/hero.jpg"
         alt="Cybersecurity Strategy"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* BASE OVERLAY */}
       <div className="absolute inset-0 bg-black/60" />
-
-      {/* GRADIENT LATERALE */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
 
-      {/* GLOW 1 */}
       <div className="absolute w-[700px] h-[700px] bg-indigo-500/20 blur-[140px] rounded-full top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2" />
-
-      {/* GLOW 2 */}
       <div className="absolute w-[500px] h-[500px] bg-purple-500/20 blur-[120px] rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3" />
 
-      {/* CONTENT */}
       <div className="relative z-10 max-w-6xl mx-auto px-6">
 
         <motion.h1
