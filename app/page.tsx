@@ -37,12 +37,11 @@ export default function Home() {
       <section className="px-6 md:px-24 py-20">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-semibold mb-6">
-            Approccio concreto
+            
           </h2>
 
           <p className="text-zinc-400 leading-relaxed text-lg">
-            Supporto aziende nella strutturazione della sicurezza informatica con un approccio pragmatico.
-            Governance, architettura e conformità vengono integrate nei processi reali, non documentate solo sulla carta.
+         
           </p>
         </div>
       </section>
@@ -58,21 +57,21 @@ export default function Home() {
           <div className="p-6 border border-zinc-800 rounded-xl hover:border-white transition">
             <h3 className="text-xl font-medium mb-3">CISO Advisory</h3>
             <p className="text-zinc-400">
-              Governance, policy e gestione del rischio allineate al business.
+             
             </p>
           </div>
 
           <div className="p-6 border border-zinc-800 rounded-xl hover:border-white transition">
             <h3 className="text-xl font-medium mb-3">NIS2</h3>
             <p className="text-zinc-400">
-              Adeguamento proporzionato, difendibile e sostenibile.
+             
             </p>
           </div>
 
           <div className="p-6 border border-zinc-800 rounded-xl hover:border-white transition">
             <h3 className="text-xl font-medium mb-3">ISO 27001</h3>
             <p className="text-zinc-400">
-              Implementazione e gestione del sistema di sicurezza.
+              
             </p>
           </div>
 
@@ -84,7 +83,7 @@ export default function Home() {
       {/* CTA */}
       <section className="px-6 md:px-24 py-20 text-center">
         <h2 className="text-3xl font-semibold mb-6">
-          Vuoi strutturare la sicurezza in modo serio?
+          
         </h2>
 
         <p className="text-zinc-400 mb-8">
