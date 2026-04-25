@@ -1,6 +1,17 @@
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+
+const geistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export default function RootLayout({
   children,
@@ -9,12 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
-      <body className="antialiased">
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-[#0B0B0C] text-white`}>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
