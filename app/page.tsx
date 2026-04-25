@@ -5,117 +5,90 @@ export default function Home() {
     <main className="bg-[#0B0B0C] text-white">
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <section className="relative h-[90vh] flex items-center">
 
-          {/* TESTO */}
-          <div>
-            <h1 className="text-6xl md:text-7xl font-semibold leading-tight tracking-tight mb-6">
-              CyberSecurity Strategy
-              <br />
-              & Governance
-            </h1>
+        {/* IMAGE */}
+        <img
+          src="/hero.jpg"
+          alt="Cybersecurity Strategy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-            <p className="text-lg text-gray-400 max-w-xl mb-10">
-              Supporto aziende strutturate nella gestione del rischio,
-              nella conformità normativa e nella costruzione di modelli
-              di sicurezza realmente governabili.
-            </p>
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
 
-            <div className="flex gap-4">
-              <a
-                href="/contact"
-                className="bg-white text-black px-6 py-3 rounded-xl font-medium hover:opacity-90 transition"
-              >
-                Contattami
-              </a>
+        {/* CONTENT */}
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
 
-              <a
-                href="/services"
-                className="border border-gray-700 px-6 py-3 rounded-xl hover:border-gray-500 transition"
-              >
-                Servizi
-              </a>
-            </div>
-          </div>
+          <h1 className="text-5xl md:text-7xl font-semibold leading-tight max-w-4xl mb-6">
+            CyberSecurity Strategy
+            <br />
+            & Software Engineering
+          </h1>
 
-          {/* IMMAGINE */}
-          <div className="relative">
-            <img
-              src="/profile.jpg"
-              alt="Marco Filippone"
-              className="rounded-2xl grayscale hover:grayscale-0 transition duration-500 border border-gray-800 shadow-2xl"
-            />
+          <p className="text-lg text-gray-300 max-w-xl mb-8">
+            Supporto aziende nella gestione del rischio informatico,
+            nella conformità normativa e nella costruzione di modelli
+            di sicurezza realmente governabili.
+          </p>
+
+          <div className="flex gap-4">
+            <a
+              href="/contact"
+              className="bg-white text-black px-6 py-3 rounded-xl font-medium hover:opacity-90 transition"
+            >
+              Contattami
+            </a>
+
+            <a
+              href="/services"
+              className="border border-white/40 px-6 py-3 rounded-xl hover:border-white transition"
+            >
+              Scopri i servizi
+            </a>
           </div>
 
         </div>
       </section>
 
-      {/* PROBLEMA */}
+      {/* SEZIONE VALUE */}
       <section className="py-32 border-t border-gray-800">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-3xl font-semibold mb-6">
-            La sicurezza non è un problema tecnico.
+            La sicurezza non è un problema tecnico
           </h2>
 
-          <p className="text-gray-400 leading-relaxed">
-            In molte organizzazioni la cybersecurity è ancora frammentata:
-            strumenti non integrati, responsabilità poco definite e scarsa
-            visibilità sul rischio reale. Questo genera inefficienza operativa
-            e aumenta l’esposizione.
+          <p className="text-gray-400 leading-relaxed text-lg">
+            Nelle organizzazioni complesse, il rischio informatico è una variabile
+            strutturale. Senza governance, genera inefficienza operativa,
+            perdita di controllo e aumento dell’esposizione.
           </p>
 
         </div>
       </section>
 
-      {/* POSIZIONAMENTO */}
-      <section className="py-32 border-t border-gray-800">
-        <div className="max-w-4xl mx-auto px-6">
-
-          <h2 className="text-3xl font-semibold mb-6">
-            Un approccio strutturato
-          </h2>
-
-          <p className="text-gray-400 leading-relaxed">
-            Non mi limito a introdurre strumenti o controlli. Definisco strutture
-            decisionali, processi e architetture che permettono alla direzione
-            di avere visibilità, controllo e capacità di intervento.
-          </p>
-
-        </div>
-      </section>
-
-      {/* SERVIZI */}
-      <section className="py-32 border-t border-gray-800">
+      {/* SEZIONE SERVIZI */}
+      <section className="py-32 bg-[#0F1115]">
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-semibold mb-12">
             Aree di intervento
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
 
             {[
-              {
-                title: "Governance",
-                desc: "Definizione di modelli di sicurezza e processi decisionali."
-              },
-              {
-                title: "Risk Management",
-                desc: "Analisi e gestione del rischio ICT in contesti complessi."
-              },
-              {
-                title: "Compliance",
-                desc: "Adeguamento a NIS2, ISO 27001 e normative correlate."
-              }
+              "Cybersecurity Governance",
+              "Risk Management",
+              "Compliance & Normative",
+              "Software Engineering"
             ].map((item) => (
               <div
-                key={item.title}
-                className="border border-gray-800 p-8 rounded-2xl hover:bg-[#111] transition"
+                key={item}
+                className="bg-[#15171c] p-6 rounded-xl border border-gray-800 hover:bg-[#1b1e24] transition"
               >
-                <h3 className="text-xl font-medium mb-4">{item.title}</h3>
-                <p className="text-gray-400 text-sm">{item.desc}</p>
+                <h3 className="text-lg">{item}</h3>
               </div>
             ))}
 
@@ -129,28 +102,22 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-semibold mb-12">
-            Metodo
+            Un approccio strutturato
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8 text-gray-400">
 
             {[
-              {
-                title: "Analisi",
-                desc: "Mappatura asset, valutazione del rischio e identificazione dei gap."
-              },
-              {
-                title: "Strutturazione",
-                desc: "Definizione di governance, processi e architetture."
-              },
-              {
-                title: "Controllo",
-                desc: "Monitoraggio continuo e supporto decisionale."
-              }
-            ].map((step) => (
-              <div key={step.title}>
-                <div className="text-sm text-gray-500 mb-2">{step.title}</div>
-                <div className="text-lg text-gray-300">{step.desc}</div>
+              "Analisi",
+              "Strategia",
+              "Implementazione",
+              "Monitoraggio"
+            ].map((step, i) => (
+              <div key={step}>
+                <div className="text-sm text-gray-600 mb-2">
+                  0{i + 1}
+                </div>
+                <div className="text-white text-lg">{step}</div>
               </div>
             ))}
 
@@ -160,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 border-t border-gray-800 text-center">
+      <section className="py-32 bg-[#0F1115] text-center">
         <div className="max-w-3xl mx-auto px-6">
 
           <p className="text-xl mb-6">
