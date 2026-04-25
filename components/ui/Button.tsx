@@ -1,10 +1,12 @@
-export default function Button({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Button({ children, variant = "primary" }: any) {
   return (
-    <button className="bg-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-500 transition">
+    <button
+      className={
+        variant === "primary"
+          ? "bg-white text-black px-6 py-3 rounded-xl font-medium hover:opacity-90 transition"
+          : "border border-gray-700 px-6 py-3 rounded-xl text-white hover:border-white transition"
+      }
+    >
       {children}
     </button>
   );
