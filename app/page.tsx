@@ -20,11 +20,11 @@ export default function Home() {
 
           <div className="flex gap-4">
             <a className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">
-              Contattami
+              
             </a>
 
             <a className="border border-zinc-700 px-6 py-3 rounded-lg hover:border-white transition">
-              Scopri di più
+              
             </a>
           </div>
         </div>
