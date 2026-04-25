@@ -1,12 +1,14 @@
-import { client } from "@/lib/sanity";
 import Hero from "@/components/sections/Hero";
 
-async function getData() {
-  return await client.fetch(`*[_type == "home"][0]`);
-}
-
-export default async function Home() {
-  const data = await getData();
+export default function Home() {
+  const data = {
+    headline: "CyberSecurity Strategy & Software Engineering",
+    subheadline:
+      "Supporto aziende nella gestione del rischio informatico e nella costruzione di modelli di sicurezza governabili.",
+    heroImage: {
+      asset: { url: "/hero.jpg" },
+    },
+  };
 
   return (
     <main>
