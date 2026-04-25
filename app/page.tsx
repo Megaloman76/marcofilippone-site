@@ -1,17 +1,16 @@
+import { client } from "@/lib/sanity";
 import Hero from "@/components/sections/Hero";
-import Value from "@/components/sections/Value";
-import Services from "@/components/sections/Services";
-import Method from "@/components/sections/Method";
-import CTA from "@/components/sections/CTA";
 
-export default function Home() {
+async function getData() {
+  return await client.fetch(`*[_type == "home"][0]`);
+}
+
+export default async function Home() {
+  const data = await getData();
+
   return (
     <main>
-      <Hero />
-      <Value />
-      <Services />
-      <Method />
-      <CTA />
+      <Hero data={data} />
     </main>
   );
 }

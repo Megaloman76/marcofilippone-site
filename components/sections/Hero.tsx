@@ -1,44 +1,41 @@
-import Button from "../ui/Button";
-import Container from "../ui/Container";
+"use client";
 
-export default function Hero() {
+import { motion } from "framer-motion";
+
+export default function Hero({ data }: any) {
   return (
-    <section className="relative h-[90vh] flex items-center">
+    <section className="relative h-screen flex items-center overflow-hidden">
 
-      {/* IMAGE */}
       <img
-        src="/hero.jpg"
-        alt="Cybersecurity Strategy"
+        src={data?.heroImage?.asset?.url}
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* OVERLAY CORRETTO */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
-      <Container>
-        <div className="relative z-10 max-w-3xl mt-20">
+      {/* glow */}
+      <div className="absolute w-[600px] h-[600px] bg-indigo-500/20 blur-[120px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
-          <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-6 tracking-tight">
-            CyberSecurity Strategy
-            <br />
-            <span className="text-white/80">
-              & Software Engineering
-            </span>
-          </h1>
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
 
-          <p className="text-lg text-gray-300 mb-8">
-            Supporto aziende nella gestione del rischio informatico,
-            nella conformità normativa e nella costruzione di modelli
-            di sicurezza realmente governabili.
-          </p>
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-6xl font-semibold mb-6"
+        >
+          {data?.headline}
+        </motion.h1>
 
-          <div className="flex gap-4">
-            <Button>Contattami</Button>
-            <Button variant="secondary">Scopri i servizi</Button>
-          </div>
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-gray-300 max-w-xl"
+        >
+          {data?.subheadline}
+        </motion.p>
 
-        </div>
-      </Container>
+      </div>
     </section>
   );
 }
