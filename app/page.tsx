@@ -7,7 +7,7 @@ export default function Home() {
         <div className="max-w-5xl">
           
           <p className="text-sm text-zinc-500 mb-4 tracking-wide">
-            CYBERSECURITY STRATEGY & ENGINEERING
+            CYBERSECURITY STRATEGY & SOFTWARE ENGINEERING
           </p>
 
           <h1 className="text-5xl md:text-7xl font-semibold mb-6 leading-tight">
@@ -15,7 +15,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl text-zinc-300 mb-10 max-w-3xl leading-relaxed">
-            CISO Advisor — NIS2 & ISO 27001.  
+            CISO Advisor — NIS2 & ISO 27001:2022.  
             Trasformo la sicurezza da costo a leva strategica.
           </p>
 
