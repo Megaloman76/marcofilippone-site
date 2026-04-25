@@ -3,8 +3,8 @@ export default function Button({ children, variant = "primary" }: any) {
     <button
       className={
         variant === "primary"
-          ? "bg-white text-black px-6 py-3 rounded-xl font-medium hover:opacity-90 transition"
-          : "border border-gray-700 px-6 py-3 rounded-xl text-white hover:border-white transition"
+          ? "bg-white text-black px-6 py-3 rounded-xl font-medium hover:bg-gray-200 transition shadow-lg"
+          : "border border-white/30 px-6 py-3 rounded-xl text-white hover:border-white transition"
       }
     >
       {children}

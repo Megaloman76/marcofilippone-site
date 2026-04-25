@@ -12,16 +12,18 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+      {/* OVERLAY CORRETTO */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
 
       <Container>
-        <div className="relative z-10 max-w-3xl">
+        <div className="relative z-10 max-w-3xl mt-20">
 
-          <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-6">
+          <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-6 tracking-tight">
             CyberSecurity Strategy
             <br />
-            & Software Engineering
+            <span className="text-white/80">
+              & Software Engineering
+            </span>
           </h1>
 
           <p className="text-lg text-gray-300 mb-8">
