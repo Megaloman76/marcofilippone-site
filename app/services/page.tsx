@@ -10,7 +10,7 @@ export default function Services() {
           {[
             "Cybersecurity Governance",
             "Risk Management",
-            "Compliance NIS2 / ISO 27001"
+            "Compliance NIS2 / ISO 27001",
 			"Software Engineering"
           ].map((item) => (
             <div key={item} className="bg-[#121316] p-8 rounded-2xl border border-gray-800">
