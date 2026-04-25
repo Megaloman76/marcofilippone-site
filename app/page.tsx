@@ -15,8 +15,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl text-zinc-300 mb-10 max-w-3xl leading-relaxed">
-            CISO Advisor — NIS2 & ISO 27001:2022.  
-            Trasformo la sicurezza da costo a leva strategica.
+            Work in Progress.
           </p>
 
           <div className="flex gap-4">
@@ -89,11 +88,11 @@ export default function Home() {
         </h2>
 
         <p className="text-zinc-400 mb-8">
-          Contattami per una prima valutazione.
+          
         </p>
 
         <a className="bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-zinc-200 transition">
-          Contattami
+          
         </a>
       </section>
 
